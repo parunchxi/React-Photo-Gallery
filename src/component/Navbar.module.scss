@@ -1,0 +1,56 @@
+@import "../assets/style/variables";
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: $text-color;
+  }
+
+  form {
+    flex-grow: 1;
+
+    .search {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      color: $text-color;
+      outline: none;
+      border: none;
+      border-radius: 1rem;
+      background-color: $input-bg-color;
+
+      &::placeholder {
+        color: $text-color2;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+
+    li {
+      color: $text-color;
+
+      a {
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $text-color2;
+          cursor: pointer;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.gallery {
+  margin: 0 auto;
+  padding: 20px;
+  width: 90vw;
+
+  columns: 4;
+  column-gap: 20px;
+
+  div {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}

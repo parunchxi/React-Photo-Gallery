@@ -1,17 +1,11 @@
 @import "variables";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
 ::selection {
   color: $bg-color;
   background-color: $text-color;
 }
 
 body {
+  font-family: Arial, sans-serif;
   background-color: $bg-color;
 }

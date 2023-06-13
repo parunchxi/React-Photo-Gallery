@@ -1,18 +1,7 @@
-import { useState } from "react";
 import { FaHeart, FaGithub, FaSun } from "react-icons/fa";
 import styles from "./Navbar.module.scss";
 
-function Navbar() {
-  const [searchText, setSearchText] = useState("");
-
-  function handleInputChange(event) {
-    setSearchText(event.target.value);
-  }
-
-  function handleFormSubmit(event) {
-    event.preventDefault();
-  }
-
+function Navbar({ searchText, handleInputChange, handleFormSubmit }) {
   return (
     <div className={styles.navbar}>
       <h1>GALLERY</h1>

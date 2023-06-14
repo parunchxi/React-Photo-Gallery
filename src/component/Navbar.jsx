@@ -1,4 +1,5 @@
-import { FaHeart, FaGithub, FaSun } from "react-icons/fa";
+/* eslint-disable react/prop-types */
+import { RiHeart3Fill, RiGithubFill } from "react-icons/ri";
 import styles from "./Navbar.module.scss";
 
 function Navbar({ searchText, handleInputChange, handleFormSubmit }) {
@@ -18,17 +19,12 @@ function Navbar({ searchText, handleInputChange, handleFormSubmit }) {
       <ul>
         <li>
           <a>
-            <FaHeart />
+            <RiHeart3Fill />
           </a>
         </li>
         <li>
           <a>
-            <FaSun />
-          </a>
-        </li>
-        <li>
-          <a>
-            <FaGithub />
+            <RiGithubFill />
           </a>
         </li>
       </ul>

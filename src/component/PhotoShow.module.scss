@@ -1,0 +1,56 @@
+@import "../assets/style/variables";
+
+.photo_show {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 7;
+
+  .photo {
+    position: relative;
+
+    img {
+      max-height: 750px;
+      max-width: 900px;
+      border-radius: 1rem;
+      z-index: 8;
+    }
+
+    .love {
+      position: absolute;
+      font-size: 1.75rem;
+      color: $text-color;
+      left: 15px;
+      bottom: 15px;
+      z-index: 9;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover {
+      .love {
+        transition: 0.3s;
+        visibility: visible;
+        opacity: 1;
+
+        &:hover {
+          cursor: pointer;
+          transition: 0.3s;
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

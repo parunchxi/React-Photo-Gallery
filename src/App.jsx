@@ -1,7 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // import React from "react";
 import { useEffect, useState } from "react";
 import Navbar from "./component/Navbar.jsx";
 import Gallery from "./component/Gallery.jsx";
+import Photoshow from "./component/Photoshow.jsx";
 
 const accessKey = "8bCYPWN5Ffah7eDYFk7VclNa1xCGFgX2qzvqqQWpLdI";
 let prevSearch;
@@ -9,6 +11,7 @@ let prevSearch;
 function App() {
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState([]);
+  const [selectPhoto, setSelectPhoto] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -29,7 +32,7 @@ function App() {
     try {
       if (searchText === "") {
         const response = await fetch(
-          `https://api.unsplash.com/photos/random?count=10&client_id=${accessKey}`
+          `https://api.unsplash.com/photos/random?count=30&client_id=${accessKey}`
         );
         const json = await response.json();
         json.forEach((item) => {
@@ -39,7 +42,7 @@ function App() {
         });
       } else {
         const response = await fetch(
-          `https://api.unsplash.com/search/photos?page=1&query=${searchText}&client_id=${accessKey}`
+          `https://api.unsplash.com/search/photos?page=1&per_page=30&query=${searchText}&client_id=${accessKey}`
         );
         const json = await response.json();
         json.results.forEach((item) => {
@@ -59,14 +62,25 @@ function App() {
     fetchData();
   }
 
+  function showPhoto(item) {
+    setSelectPhoto(item);
+  }
+
+  function hidePhoto() {
+    setSelectPhoto("");
+  }
+
   return (
     <>
+      {selectPhoto && (
+        <Photoshow selectPhoto={selectPhoto} hidePhoto={hidePhoto} />
+      )}
       <Navbar
         searchText={searchText}
         handleInputChange={handleInputChange}
         handleFormSubmit={handleFormSubmit}
       />
-      <Gallery data={data} />
+      <Gallery data={data} showPhoto={showPhoto} />
     </>
   );
 }

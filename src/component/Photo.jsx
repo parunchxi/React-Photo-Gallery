@@ -2,9 +2,14 @@
 import { RiHeart3Fill } from "react-icons/ri";
 import styles from "./Photo.module.scss";
 
-function Photo({ item }) {
+function Photo({ item, showPhoto }) {
   return (
-    <div className={styles.photo}>
+    <div
+      className={styles.photo}
+      onClick={() => {
+        showPhoto(item);
+      }}
+    >
       <div className={styles.filter}>
         <RiHeart3Fill className={styles.love} />
       </div>

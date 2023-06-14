@@ -6,7 +6,7 @@ function Photoshow({ selectPhoto, hidePhoto }) {
     <div className={styles.photo_show}>
       <div className={styles.photo}>
         <RiHeart3Fill className={styles.love} />
-        <img src={selectPhoto.urls.regular} alt="" />
+        <img src={selectPhoto.urls.regular} alt={selectPhoto.alt_description} />
       </div>
       <div className={styles.bg} onClick={hidePhoto}></div>
     </div>

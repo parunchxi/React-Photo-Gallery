@@ -13,7 +13,7 @@ function Photo({ item, showPhoto }) {
       <div className={styles.filter}>
         <RiHeart3Fill className={styles.love} />
       </div>
-      <img src={item.urls.regular} />
+      <img src={item.urls.regular} alt={item.alt_description} />
     </div>
   );
 }

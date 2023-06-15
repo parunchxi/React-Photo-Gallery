@@ -5,8 +5,8 @@ import Navbar from "./component/Navbar.jsx";
 import Gallery from "./component/Gallery.jsx";
 import Photoshow from "./component/Photoshow.jsx";
 
-const accessKey = "8bCYPWN5Ffah7eDYFk7VclNa1xCGFgX2qzvqqQWpLdI";
-let prevSearch;
+const accessKey = "MGQOHGxnQC2LET-46Jl4QxbBLRfqY2fDIkGkEj6qSFk";
+let prevSearch = "";
 
 function App() {
   const [searchText, setSearchText] = useState("");
@@ -70,12 +70,17 @@ function App() {
     setSelectPhoto("");
   }
 
+  function onHomeClick() {
+    window.location.reload(false);
+  }
+
   return (
     <>
       {selectPhoto && (
         <Photoshow selectPhoto={selectPhoto} hidePhoto={hidePhoto} />
       )}
       <Navbar
+        onHomeClick={onHomeClick}
         searchText={searchText}
         handleInputChange={handleInputChange}
         handleFormSubmit={handleFormSubmit}

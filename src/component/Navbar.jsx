@@ -2,10 +2,15 @@
 import { RiHeart3Fill, RiGithubFill } from "react-icons/ri";
 import styles from "./Navbar.module.scss";
 
-function Navbar({ searchText, handleInputChange, handleFormSubmit }) {
+function Navbar({
+  onHomeClick,
+  searchText,
+  handleInputChange,
+  handleFormSubmit,
+}) {
   return (
     <div className={styles.navbar}>
-      <h1>GALLERY</h1>
+      <h1 onClick={onHomeClick}>GALLERY</h1>
       <form onSubmit={handleFormSubmit}>
         <input
           type="text"
@@ -23,7 +28,7 @@ function Navbar({ searchText, handleInputChange, handleFormSubmit }) {
           </a>
         </li>
         <li>
-          <a>
+          <a href="https://github.com/parunchxi/React-Photo-Gallery">
             <RiGithubFill />
           </a>
         </li>

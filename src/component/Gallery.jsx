@@ -5,8 +5,8 @@ import Photo from "./Photo";
 function Gallery({ data, showPhoto }) {
   return (
     <div className={styles.gallery}>
-      {data.map((item, index) => {
-        return <Photo key={index} item={item} showPhoto={showPhoto} />;
+      {data.map((item) => {
+        return <Photo key={item.id} item={item} showPhoto={showPhoto} />;
       })}
     </div>
   );

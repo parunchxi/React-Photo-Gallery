@@ -22,11 +22,11 @@ function Navbar({
         />
       </form>
       <ul>
-        <li>
+        {/* <li>
           <a>
             <RiHeart3Fill />
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://github.com/parunchxi/React-Photo-Gallery">
             <RiGithubFill />

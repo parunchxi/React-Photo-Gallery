@@ -27,10 +27,10 @@ function Navbar() {
       <ul>
         <li>
           <NavLink
-            to="/favourite"
+            to="/favorite"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            <RiHeart3Fill title="Favourit" />
+            <RiHeart3Fill title="Favorit" />
           </NavLink>
         </li>
         <li>

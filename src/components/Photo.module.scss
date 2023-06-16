@@ -32,7 +32,8 @@
       color: $text-color;
       left: 15px;
       bottom: 15px;
-      visibility: hidden;
+      opacity: 0;
+      z-index: 3;
     }
 
     &:hover {
@@ -48,8 +49,8 @@
       }
 
       .love {
-        transition: 0.3s;
-        visibility: visible;
+        transition: opacity 0.3s;
+        opacity: 1;
 
         &:hover {
           cursor: pointer;

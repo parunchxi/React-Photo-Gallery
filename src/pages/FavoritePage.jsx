@@ -3,11 +3,11 @@ import { useContext, useEffect } from "react";
 import styles from "./FavouritePage.module.scss";
 import { GalleryContext } from "../context/GalleryContext";
 import Gallery from "../components/Gallery";
-import { FavouriteContext } from "../context/FavouriteContext";
+import { FavoriteContext } from "../context/FavoriteContext";
 
 const FavouritePage = () => {
   const { setSearchText, setData } = useContext(GalleryContext);
-  const { favourite } = useContext(FavouriteContext);
+  const { favorite } = useContext(FavoriteContext);
 
   useEffect(() => {
     setSearchText("");
@@ -17,11 +17,11 @@ const FavouritePage = () => {
   return (
     <>
       <h1 className={styles.header}>
-        {favourite.length === 0 && "No Favourite Photo"}
-        {favourite.length === 1 && "Your Favourite Photo"}
-        {favourite.length > 1 && "Your Favourite Photos"}
+        {favorite.length === 0 && "No Favorite Photo"}
+        {favorite.length === 1 && "Your Favorite Photo"}
+        {favorite.length > 1 && "Your Favorite Photos"}
       </h1>
-      <Gallery data={favourite} />;
+      <Gallery data={favorite} />;
     </>
   );
 };

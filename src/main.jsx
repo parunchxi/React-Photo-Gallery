@@ -5,15 +5,15 @@ import "./assets/style/_reset.scss";
 import "./assets/style/index.scss";
 import { GalleryContextProvider } from "./context/GalleryContext.jsx";
 import { BrowserRouter } from "react-router-dom";
-import { FavouriteContextProvider } from "./context/FavouriteContext.jsx";
+import { FavoriteContextProvider } from "./context/FavoriteContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <GalleryContextProvider>
-        <FavouriteContextProvider>
+        <FavoriteContextProvider>
           <App />
-        </FavouriteContextProvider>
+        </FavoriteContextProvider>
       </GalleryContextProvider>
     </BrowserRouter>
   </React.StrictMode>

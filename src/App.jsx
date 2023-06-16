@@ -5,7 +5,7 @@ import { GalleryContext } from "./context/GalleryContext.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Photoshow from "./components/Photoshow.jsx";
 import MainPage from "./pages/MainPage.jsx";
-import FavouritePage from "./pages/FavouritePage.jsx";
+import FavoritePage from "./pages/FavoritePage.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<MainPage />} />
-        <Route exact path="/favourite" element={<FavouritePage />} />
+        <Route exact path="/favorite" element={<FavoritePage />} />
       </Routes>
     </>
   );

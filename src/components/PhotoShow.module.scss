@@ -33,6 +33,20 @@
       opacity: 0;
     }
 
+    .lovered {
+      position: absolute;
+      font-size: 1.75rem;
+      color: $red;
+      left: 15px;
+      bottom: 15px;
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .lovered ~ .love {
+      display: none;
+    }
+
     &:hover {
       .love {
         transition: 0.3s;
@@ -42,7 +56,7 @@
         &:hover {
           cursor: pointer;
           transition: 0.3s;
-          color: $red;
+          color: $text-color2;
         }
       }
     }

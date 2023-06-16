@@ -12,10 +12,14 @@ function Photo({ item }) {
   return (
     <div className={styles.photo}>
       <div className={styles.overlay}>
+        {favorite.includes(item) && (
+          <RiHeart3Fill
+            className={styles.lovered}
+            onClick={() => handleFavorite(item)}
+          />
+        )}
         <RiHeart3Fill
-          className={`${styles.love} ${
-            favorite.includes(item) ? `${styles.red}` : ""
-          }`}
+          className={styles.love}
           onClick={() => handleFavorite(item)}
         />
         <div

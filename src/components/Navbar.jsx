@@ -1,13 +1,17 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
 import { RiHeart3Fill, RiGithubFill } from "react-icons/ri";
 import styles from "./Navbar.module.scss";
+import { GalleryContext } from "../context/GalleryContext";
 
-function Navbar({
-  onHomeClick,
-  searchText,
-  handleInputChange,
-  handleFormSubmit,
-}) {
+function Navbar() {
+  const { searchText, handleInputChange, handleFormSubmit } =
+    useContext(GalleryContext);
+
+  function onHomeClick() {
+    window.location.reload(false);
+  }
+
   return (
     <div className={styles.navbar}>
       <h1 onClick={onHomeClick}>GALLERY</h1>

@@ -1,7 +1,10 @@
 import { RiHeart3Fill } from "react-icons/ri";
 import styles from "./PhotoShow.module.scss";
+import { useContext } from "react";
+import { GalleryContext } from "../context/GalleryContext";
 
-function Photoshow({ selectPhoto, hidePhoto }) {
+function Photoshow() {
+  const { selectPhoto, hidePhoto } = useContext(GalleryContext);
   return (
     <div className={styles.photo_show}>
       <div className={styles.photo}>

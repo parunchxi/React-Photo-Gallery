@@ -28,12 +28,12 @@ function Navbar() {
       <ul>
         <li>
           <a>
-            <RiHeart3Fill />
+            <RiHeart3Fill title="Favourit" />
           </a>
         </li>
         <li>
           <a href="https://github.com/parunchxi/React-Photo-Gallery">
-            <RiGithubFill />
+            <RiGithubFill title="Github" />
           </a>
         </li>
       </ul>

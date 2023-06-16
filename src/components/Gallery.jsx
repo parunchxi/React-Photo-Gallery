@@ -1,11 +1,16 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./Gallery.module.scss";
 import Photo from "./Photo";
 import { GalleryContext } from "../context/GalleryContext";
 
 function Gallery({ showPhoto }) {
-  const { data } = useContext(GalleryContext);
+  const { data, fetchData } = useContext(GalleryContext);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className={styles.gallery}>
       {data.map((item) => {

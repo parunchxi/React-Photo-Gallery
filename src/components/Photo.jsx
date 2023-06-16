@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 import { RiHeart3Fill } from "react-icons/ri";
 import styles from "./Photo.module.scss";
+import { useContext } from "react";
+import { GalleryContext } from "../context/GalleryContext";
 
-function Photo({ item, showPhoto }) {
+function Photo({ item }) {
+  const { showPhoto } = useContext(GalleryContext);
   return (
     <div
       className={styles.photo}

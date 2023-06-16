@@ -10,6 +10,7 @@ let prevSearch = "";
 export const GalleryContextProvider = ({ children }) => {
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState([]);
+  const [selectPhoto, setSelectPhoto] = useState("");
 
   function handleInputChange(event) {
     setSearchText(event.target.value);
@@ -56,12 +57,23 @@ export const GalleryContextProvider = ({ children }) => {
     fetchData();
   }
 
+  function showPhoto(item) {
+    setSelectPhoto(item);
+  }
+
+  function hidePhoto() {
+    setSelectPhoto("");
+  }
+
   const contextValue = {
     searchText,
     data,
     handleInputChange,
     handleFormSubmit,
     fetchData,
+    selectPhoto,
+    showPhoto,
+    hidePhoto,
   };
 
   return (

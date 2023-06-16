@@ -14,4 +14,5 @@ This Photo Gallery has been developed using ReactJS.
 
 ## Preview
 
-![Preview](https://github.com/parunchxi/React-Photo-Gallery/assets/127289841/6ad8226c-c146-4d3c-a970-c4cc71900fd3)
+
+![Preview](https://github.com/parunchxi/React-Photo-Gallery/assets/127289841/8a9bc35e-e184-4034-aa54-4eaaed5a4085)

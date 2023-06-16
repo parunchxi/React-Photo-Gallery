@@ -10,8 +10,8 @@ function Gallery({ data }) {
 
   return (
     <div className={styles.gallery}>
-      {data.map((item) => {
-        return <Photo key={item.id} item={item} showPhoto={showPhoto} />;
+      {data.map((item, index) => {
+        return <Photo key={index} item={item} showPhoto={showPhoto} />;
       })}
     </div>
   );

@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // import React from "react";
 import { useEffect, useState } from "react";
-import Navbar from "./component/Navbar.jsx";
-import Gallery from "./component/Gallery.jsx";
-import Photoshow from "./component/Photoshow.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Gallery from "./components/Gallery.jsx";
+import Photoshow from "./components/Photoshow.jsx";
 
 const accessKey = "MGQOHGxnQC2LET-46Jl4QxbBLRfqY2fDIkGkEj6qSFk";
 let prevSearch = "";

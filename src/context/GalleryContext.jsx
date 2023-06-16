@@ -68,6 +68,7 @@ export const GalleryContextProvider = ({ children }) => {
   const contextValue = {
     searchText,
     data,
+    setData,
     handleInputChange,
     handleFormSubmit,
     fetchData,

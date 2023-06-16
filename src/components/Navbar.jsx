@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { RiHeart3Fill, RiGithubFill } from "react-icons/ri";
 import styles from "./Navbar.module.scss";
 import { GalleryContext } from "../context/GalleryContext";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const { searchText, handleInputChange, handleFormSubmit } =
@@ -26,11 +26,12 @@ function Navbar() {
       </form>
       <ul>
         <li>
-          <Link to="/favourite">
-            <a>
-              <RiHeart3Fill title="Favourit" />
-            </a>
-          </Link>
+          <NavLink
+            to="/favourite"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            <RiHeart3Fill title="Favourit" />
+          </NavLink>
         </li>
         <li>
           <a href="https://github.com/parunchxi/React-Photo-Gallery">

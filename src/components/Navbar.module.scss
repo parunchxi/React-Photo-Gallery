@@ -55,6 +55,10 @@
           transition: color 0.3s;
         }
       }
+
+      .active {
+        color: $red !important;
+      }
     }
   }
 }

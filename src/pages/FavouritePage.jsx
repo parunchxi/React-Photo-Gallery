@@ -1,5 +1,11 @@
+import styles from "./FavouritePage.module.scss";
+
 const FavouritePage = () => {
-  return <div>FavouritePage</div>;
+  return (
+    <div>
+      <h1 className={styles.header}>Your Favourite Photo</h1>
+    </div>
+  );
 };
 
 export default FavouritePage;

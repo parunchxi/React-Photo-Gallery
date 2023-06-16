@@ -1,11 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react-hooks/exhaustive-deps */
-// import React from "react";
 import { useContext } from "react";
-import Navbar from "./components/Navbar.jsx";
-import Gallery from "./components/Gallery.jsx";
-import Photoshow from "./components/Photoshow.jsx";
 import { GalleryContext } from "./context/GalleryContext.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Photoshow from "./components/Photoshow.jsx";
+import MainPage from "./pages/MainPage.jsx";
+import FavouritePage from "./pages/FavouritePage.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const { selectPhoto } = useContext(GalleryContext);
@@ -14,7 +15,10 @@ function App() {
     <>
       {selectPhoto && <Photoshow />}
       <Navbar />
-      <Gallery />
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+        <Route exact path="/favourite" element={<FavouritePage />} />
+      </Routes>
     </>
   );
 }

@@ -4,8 +4,8 @@ import styles from "./Gallery.module.scss";
 import Photo from "./Photo";
 import { GalleryContext } from "../context/GalleryContext";
 
-function Gallery({ showPhoto }) {
-  const { data, fetchData } = useContext(GalleryContext);
+function Gallery({ data }) {
+  const { fetchData, showPhoto } = useContext(GalleryContext);
 
   useEffect(() => {
     fetchData();

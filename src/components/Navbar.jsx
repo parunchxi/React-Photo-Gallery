@@ -3,18 +3,17 @@ import { useContext } from "react";
 import { RiHeart3Fill, RiGithubFill } from "react-icons/ri";
 import styles from "./Navbar.module.scss";
 import { GalleryContext } from "../context/GalleryContext";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { searchText, handleInputChange, handleFormSubmit } =
     useContext(GalleryContext);
 
-  function onHomeClick() {
-    window.location.reload(false);
-  }
-
   return (
     <div className={styles.navbar}>
-      <h1 onClick={onHomeClick}>GALLERY</h1>
+      <Link to="/">
+        <h1>GALLERY</h1>
+      </Link>
       <form onSubmit={handleFormSubmit}>
         <input
           type="text"
@@ -27,9 +26,11 @@ function Navbar() {
       </form>
       <ul>
         <li>
-          <a>
-            <RiHeart3Fill title="Favourit" />
-          </a>
+          <Link to="/favourite">
+            <a>
+              <RiHeart3Fill title="Favourit" />
+            </a>
+          </Link>
         </li>
         <li>
           <a href="https://github.com/parunchxi/React-Photo-Gallery">

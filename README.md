@@ -8,9 +8,11 @@ This Photo Gallery has been developed using ReactJS.
 - Show search photos.
 - Add photo to favourite.
 
-## Future Features
+## Warning!
 
-- Infinite scroll.
+Please insert your access key from [Unsplash](https://unsplash.com/developers) in "src > context > GalleryContext.jsx > line 7."
+
+       const accessKey = "YOUR_ACCESS_KEY";
 
 ## Preview
 

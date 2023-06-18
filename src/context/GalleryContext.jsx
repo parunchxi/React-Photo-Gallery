@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 
 export const GalleryContext = createContext(null);
 
-const accessKey = "8bCYPWN5Ffah7eDYFk7VclNa1xCGFgX2qzvqqQWpLdI";
+const accessKey = "YOUR_ACCESS_KEY";
 let prevSearch = "";
 
 export const GalleryContextProvider = ({ children }) => {

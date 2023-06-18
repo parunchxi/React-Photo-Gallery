@@ -1,4 +1,4 @@
-# Photo Gallery (ReactJS,JavaScript)
+# Photo Gallery (ReactJS,Vite,JavaScript)
 
 This Photo Gallery has been developed using ReactJS.
 

@@ -10,9 +10,9 @@ This Photo Gallery has been developed using ReactJS.
 
 ## Warning!
 
-Please insert your access key from [Unsplash](https://unsplash.com/developers) in "src > context > GalleryContext.jsx > line 7."
+Please insert your access key from [Unsplash](https://unsplash.com/developers) in ".env" file
 
-       const accessKey = "YOUR_ACCESS_KEY";
+       VITE_ACCESS_KEY=PUT_YOUR_API_KEY;
 
 ## Preview
 

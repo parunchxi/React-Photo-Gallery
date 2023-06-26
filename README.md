@@ -18,20 +18,13 @@ Please insert your access key from [Unsplash Developers](https://unsplash.com/de
 
 ![Preview](https://github.com/parunchxi/React-Photo-Gallery/assets/127289841/8a9bc35e-e184-4034-aa54-4eaaed5a4085)
 
-## Installation
+## Commands
 
-Clone this repository and install dependencies.
+Run these commands from the project's root directory using a terminal.
 
-        npm install
-
-### Development
-
-        npm run dev
-
-### Building the App
-
-        npm run build
-
-### Testing the App Locally
-
-        npm run preview
+| Command           | Description                                                       |
+| :---------------- | :---------------------------------------------------------------- |
+| `npm install`     | Installs project dependencies.                                    |
+| `npm run dev`     | Starts the local development server at `localhost:3000`.          |
+| `npm run build`   | Builds the production site in the `dist` directory.               |
+| `npm run preview` | Previews the build locally at `localhost:8080` before deployment. |

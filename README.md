@@ -3,23 +3,22 @@
 This Photo Gallery has been developed using ReactJS.
 
 ## Features
-
 - Show random photos.
 - Show search photos.
 - Add photo to favourite.
 
 ## Warning!
-
 Please insert your access key from [Unsplash Developers](https://unsplash.com/developers) in ".env" file
 
         VITE_ACCESS_KEY=PUT_YOUR_API_KEY;
 
 ## Preview
-
 ![Preview](https://github.com/parunchxi/React-Photo-Gallery/assets/127289841/8a9bc35e-e184-4034-aa54-4eaaed5a4085)
 
-## Commands
+## Requirement
+- Node.js
 
+## Commands
 Run these commands from the project's root directory using a terminal.
 
 | Command           | Description                                                       |

@@ -11,7 +11,11 @@ const MainPage = () => {
     fetchData();
   }, []);
 
-  return <Gallery data={data} />;
+  return (
+    <div className="content">
+      <Gallery data={data} />
+    </div>
+  );
 };
 
 export default MainPage;

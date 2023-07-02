@@ -21,7 +21,9 @@ const FavouritePage = () => {
         {favorite.length === 1 && "Your Favorite Photo"}
         {favorite.length > 1 && "Your Favorite Photos"}
       </h1>
-      <Gallery data={favorite} />;
+      <div className="content">
+        <Gallery data={favorite} />;
+      </div>
     </>
   );
 };

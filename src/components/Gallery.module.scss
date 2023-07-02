@@ -1,8 +1,15 @@
 .gallery {
-  margin: 0 auto;
   padding: 20px;
   width: 90vw;
 
   columns: 4;
   column-gap: 20px;
+
+  @media screen and (max-width: 780px) {
+    columns: 3;
+  }
+
+  @media screen and (max-width: 425px) {
+    columns: 1;
+  }
 }

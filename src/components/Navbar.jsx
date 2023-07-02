@@ -33,7 +33,7 @@ function Navbar() {
             <RiHeart3Fill title="Favorit" />
           </NavLink>
         </li>
-        <li>
+        <li className={styles.github}>
           <a href="https://github.com/parunchxi/React-Photo-Gallery">
             <RiGithubFill title="Github" />
           </a>

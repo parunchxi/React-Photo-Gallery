@@ -61,6 +61,22 @@
       }
     }
   }
+
+  @media screen and (max-width: 780px) {
+    .photo {
+      img {
+        max-width: 650px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .photo {
+      img {
+        max-width: 370px;
+      }
+    }
+  }
 }
 
 .bg {

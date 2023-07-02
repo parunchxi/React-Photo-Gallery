@@ -9,3 +9,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: $bg-color;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+}

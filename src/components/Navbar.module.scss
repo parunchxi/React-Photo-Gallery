@@ -61,4 +61,17 @@
       }
     }
   }
+  @media screen and (max-width: 780px) {
+    .github {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    flex-wrap: wrap;
+
+    form {
+      order: 1;
+    }
+  }
 }
